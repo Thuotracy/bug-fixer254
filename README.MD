@@ -65,7 +65,7 @@ Install  all dependancies that will make the app run/function
 
 ### License
 
-bugfixer254 is under the ***[MIT](LICENSE)*** license.
+Bugfixer254 is under the ***[MIT](LICENSE)*** license.
 
 
 
