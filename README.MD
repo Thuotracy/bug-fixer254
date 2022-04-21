@@ -56,6 +56,7 @@ Install  all dependancies that will make the app run/function
     - Django 
     - Bootstrap4
     - Heroku
+    - Postgresql
     - GIT
 
 ### Live Link
