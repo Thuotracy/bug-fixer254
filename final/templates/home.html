@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{%load static%}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+{% block styles %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+{% endblock %}
+
+{% block content %}
+{{ blocksuper }}
+
+<div class="container">
+  <div class="row lo" id="lorem">
+    <div class="col-md-6 lorem">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quibusdam numquam, odit commodi remove the dudus non dolorem facere consequatur. Quam esse reprehenderit odit aspernatur inventore provident remove the dudus deserunt! Corporis, laboriosam blanditiis!
+      Lorem ipsum dolor sit amet remove the dudus adipisicing elit. Fuga beatae, non illo sint tempora porro maiores remove the dudus corrupti atque nesciunt a asperiores minima quo, libero remove the dudus, harum omnis. Modi, atque!
+      Lorem ipsum dolor sit, amet consectetur remove the dudus elit. Iste similique accusantium suscipit soluta libero, magnam maiores sapiente in adipisci remove the dudus eius quod, unde officia quam beatae sit quasi necessitatibus cum?
+      <p>Here are a few sites found to have issues and posted by the disappointed users</p>
+    </div>
+    <div class="col-md-4">
+      <img src="/static/coding.jpg" alt="background image">
+    </div>
+  </div>
+
+  {% if display %}
+  <div class="results">
+    {% for items in display %}
+    <div class="row">
+      <p>Website : {{ items.website }}</p><br>
+      <div class="col-md-2"></div>
+      <img class="col-md-8" src="{{ items.image.url }}" alt="site_screenshot"><br><br>
+      <p>Complaint : {{ items.complaint }} <br>Posted by {{ items.complainant }} <br> {{ items.date }}</p>
+    </div>
+    {% endfor %}
+  </div>
+
+  {% endif %}
+</div>
+{% endblock %}

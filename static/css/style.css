@@ -1,0 +1,65 @@
+.lo{
+  padding-top: 7%;
+  padding-bottom: 10%;
+}
+.lorem{
+  margin-right: 3%;
+}
+
+
+.results img{
+  height: 25rem;
+}
+.results .row{
+  border: .3rem solid green;
+  padding: 3%;
+  margin: 1%;
+  margin-top: 3%;
+  font-size: 150%;
+  overflow-wrap: break-word;
+}
+
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+.reg{
+  background-color: whitesmoke;
+}
+.reg div{
+  padding: 3%;
+}
+.reg button{
+  margin: 3%;
+}
+span{
+  float: right;
+}
+
+
+footer{
+  background-color: whitesmoke;
+  margin-bottom: -20px;
+  margin-top: -17px;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+.foo{
+  display: flex;
+  flex-direction: column; 
+}
+.contacts{
+  padding-left: 20%;
+}
+.foot{
+  display: flex;
+  flex-direction: column;
+}
+.quicklinks{
+  float: right;
+  padding-right: 20%;
+}
+.last{
+  margin-top: 10%;
+}
